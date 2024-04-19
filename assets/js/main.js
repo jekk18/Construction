@@ -54,8 +54,7 @@ $(document).ready(function(){
         dots: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 1,
-        // centerMode: true,
+        slidesToShow: 1, 
         variableWidth: true
       });
   });
