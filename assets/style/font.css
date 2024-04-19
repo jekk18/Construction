@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Anek Latin';
+    src: url('../fonts/AnekLatin-Bold.woff2') format('woff2'),
+        url('../fonts/AnekLatin-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG Glaho WEB Caps';
+    src: url('../fonts/BPGGlahoWEBCaps.woff2') format('woff2'),
+        url('../fonts/BPGGlahoWEBCaps.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG Nino Mtavruli';
+    src: url('../fonts/BPGNinoMtavruli-Bold.woff2') format('woff2'),
+        url('../fonts/BPGNinoMtavruli-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG Arial';
+    src: url('../fonts/BPGArial.woff2') format('woff2'),
+        url('../fonts/BPGArial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG Arial';
+    src: url('../fonts/BPGArial.woff2') format('woff2'),
+        url('../fonts/BPGArial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
