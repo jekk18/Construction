@@ -395,6 +395,22 @@
           <div class="project-container">
             <h1 class="font-mtavruli section-title">projects</h1>
           </div>
+          <div class="project-arrows">
+            <div class="prev gen-arr" id="prev-project">
+              <span>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                  <path d="M2 16L16.9367 31M2 16L16.9367 1M2 16L32 16" stroke="black" stroke-width="2" />
+                </svg>
+              </span>
+            </div>
+            <div class="next gen-arr" id="next-project">
+              <span>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                  <path d="M2 16L16.9367 31M2 16L16.9367 1M2 16L32 16" stroke="black" stroke-width="2" />
+                </svg>
+              </span>
+            </div>
+          </div>
           <div class="project-slider">
             <div class="project-slider-item">
               <div class="text-side font-arial">
@@ -428,16 +444,20 @@
                     natus. Eligendi reprehenderit sequi quae quo laudantium
                     molestias distinctio quasi est, tenetur ratione, voluptates
                     iste recusandae architecto possimus? Eum autem aperiam hic
-                    omnis deserunt, ea tenetur iusto, quibusdam possimus dolores a
-                    fugiat eos ipsam, non reprehenderit dolore quisquam. Quis
-                    accusamus magnam quas excepturi debitis, molestiae optio amet
-                    vero corporis voluptates recusandae alias cum voluptatum quasi
-                    culpa tempore aliquid, enim dolores possimus eum saepe
-                    obcaecati architecto? Iste repellendus aliquid est ea odit
-                    magni voluptas velit deleniti ab veniam.
+                    omnis deserunt, ea tenetur iusto, quibusdam possimus dolores
+                    a fugiat eos ipsam, non reprehenderit dolore quisquam. Quis
+                    accusamus magnam quas excepturi debitis, molestiae optio
+                    amet vero corporis voluptates recusandae alias cum
+                    voluptatum quasi culpa tempore aliquid, enim dolores
+                    possimus eum saepe obcaecati architecto? Iste repellendus
+                    aliquid est ea odit magni voluptas velit deleniti ab veniam.
                   </div>
-                  <a href="#" class="project-continue-btn font-mtavruli">Continue</a>
-                </div> 
+                  <div class="continue-btn">
+                    <a href="#" class="project-continue-btn font-mtavruli"
+                      >Continue</a
+                    >
+                  </div>
+                </div>
                 <div class="project-img">
                   <a href="#">
                     <img src="assets/img/project-img.png" alt="project-img" />
@@ -446,54 +466,58 @@
               </div>
             </div>
             <div class="project-slider-item">
-                <div class="text-side font-arial">
-                  Lorem ipsum dolor sit amet, consectetur dolor sit amet,
-                  consectetur adipiscingLorem ipsum dolor sit amet, Lorem ipsum
-                  dolor sit amet, ipsum dolor sit amet, consectetur dconsectetur
-                  adipiscing
-                </div>
-                <div class="project-bottom-img-info">
-                  <div class="project-info">
-                    <div class="content-status">
-                      <div class="status font-mtavruli ongoing">ongoing</div>
-                      <div class="category font-mtavruli">
-                        CATEGORY: <span class="building"> BUILDING </span>
-                      </div>
+              <div class="text-side font-arial">
+                Lorem ipsum dolor sit amet, consectetur dolor sit amet,
+                consectetur adipiscingLorem ipsum dolor sit amet, Lorem ipsum
+                dolor sit amet, ipsum dolor sit amet, consectetur dconsectetur
+                adipiscing
+              </div>
+              <div class="project-bottom-img-info">
+                <div class="project-info">
+                  <div class="content-status">
+                    <div class="status font-mtavruli ongoing">ongoing</div>
+                    <div class="category font-mtavruli">
+                      CATEGORY: <span class="building"> BUILDING </span>
                     </div>
-                    <div class="time font-arial">23.04.2020 - 23.02.2024</div>
-                    <ul>
-                      <li class="font-arial">Client: <span>"example"</span></li>
-                      <li class="font-arial">
-                        Construction area: <span>2008 m2</span>
-                      </li>
-                      <li class="font-arial">
-                        Number of Rooms: <span>558</span>
-                      </li>
-                    </ul>
-                    <div class="text font-arial">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Provident unde blanditiis dolorum dignissimos, voluptatibus
-                      expedita quas nihil quidem iure officiis odio, culpa sit
-                      natus. Eligendi reprehenderit sequi quae quo laudantium
-                      molestias distinctio quasi est, tenetur ratione, voluptates
-                      iste recusandae architecto possimus? Eum autem aperiam hic
-                      omnis deserunt, ea tenetur iusto, quibusdam possimus dolores a
-                      fugiat eos ipsam, non reprehenderit dolore quisquam. Quis
-                      accusamus magnam quas excepturi debitis, molestiae optio amet
-                      vero corporis voluptates recusandae alias cum voluptatum quasi
-                      culpa tempore aliquid, enim dolores possimus eum saepe
-                      obcaecati architecto? Iste repellendus aliquid est ea odit
-                      magni voluptas velit deleniti ab veniam.
-                    </div>
-                    <a href="#" class="project-continue-btn font-mtavruli">Continue</a>
-                  </div> 
-                  <div class="project-img">
-                    <a href="#">
-                      <img src="assets/img/project-img.png" alt="project-img" />
-                    </a>
+                  </div>
+                  <div class="time font-arial">23.04.2020 - 23.02.2024</div>
+                  <ul>
+                    <li class="font-arial">Client: <span>"example"</span></li>
+                    <li class="font-arial">
+                      Construction area: <span>2008 m2</span>
+                    </li>
+                    <li class="font-arial">
+                      Number of Rooms: <span>558</span>
+                    </li>
+                  </ul>
+                  <div class="text font-arial">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident unde blanditiis dolorum dignissimos, voluptatibus
+                    expedita quas nihil quidem iure officiis odio, culpa sit
+                    natus. Eligendi reprehenderit sequi quae quo laudantium
+                    molestias distinctio quasi est, tenetur ratione, voluptates
+                    iste recusandae architecto possimus? Eum autem aperiam hic
+                    omnis deserunt, ea tenetur iusto, quibusdam possimus dolores
+                    a fugiat eos ipsam, non reprehenderit dolore quisquam. Quis
+                    accusamus magnam quas excepturi debitis, molestiae optio
+                    amet vero corporis voluptates recusandae alias cum
+                    voluptatum quasi culpa tempore aliquid, enim dolores
+                    possimus eum saepe obcaecati architecto? Iste repellendus
+                    aliquid est ea odit magni voluptas velit deleniti ab veniam.
+                  </div>
+                  <div class="continue-btn">
+                    <a href="#" class="project-continue-btn font-mtavruli"
+                      >Continue</a
+                    >
                   </div>
                 </div>
+                <div class="project-img">
+                  <a href="#">
+                    <img src="assets/img/project-img.png" alt="project-img" />
+                  </a>
+                </div>
               </div>
+            </div>
           </div>
         </div>
       </section>

@@ -55,7 +55,10 @@ $(document).ready(function(){
         infinite: true,
         speed: 300,
         slidesToShow: 1, 
-        variableWidth: true
+        variableWidth: true,
+        arrows: true, 
+        prevArrow: $('#prev-project'),
+        nextArrow: $('#next-project'),
       });
   });
 
