@@ -8,22 +8,81 @@ $(document).ready(function(){
         arrows: false,
         dots: false,
     });
+    
     $('.our-services-slider').slick({
-        infinite: true, 
-        slidesToShow: 5,
-        slidesToScroll: 2,   
+      infinite: true, 
+      slidesToShow: 5,
+      slidesToScroll: 2,   
+      variableWidth: true,
+      dots: false,
+      arrows: true, 
+      prevArrow: $('#prev-arrow'),
+      nextArrow: $('#next-arrow'),
+        responsive: [
+          {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,  
+              arrows: false,   
+            }
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              arrows: false, 
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false, 
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 574,
+            settings: {
+              arrows: false, 
+              slidesToShow: 1,
+              slidesToScroll: 1,  
+            }
+          }
+        ]  
+    }); 
+      $('.project-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1, 
         variableWidth: true,
+        arrows: true, 
+        prevArrow: $('#prev-project'),
+        nextArrow: $('#next-project'),
+      });
+      $('.about-slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1, 
+        variableWidth: true,
+        arrows: false,  
+      });
+      $('.o-services-slider').slick({
+        infinite: false, 
+        slidesToShow: 4,
+        slidesToScroll: 2,    
         dots: false,
         arrows: true, 
-        prevArrow: $('#prev-arrow'),
-        nextArrow: $('#next-arrow'),
+        prevArrow: $('#prev'),
+        nextArrow: $('#next'),
           responsive: [
             {
               breakpoint: 1600,
               settings: {
                 slidesToShow: 4,
-                slidesToScroll: 1,  
-                arrows: false,   
+                slidesToScroll: 1,   
               }
             },
             {
@@ -50,21 +109,26 @@ $(document).ready(function(){
             }
           ]  
       });
-      $('.project-slider').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1, 
-        variableWidth: true,
-        arrows: true, 
-        prevArrow: $('#prev-project'),
-        nextArrow: $('#next-project'),
-      });
   });
 
-  
-
-
+  $(document).ready(function() { 
+    $('.count h4').each(function () { 
+      var h4Text = $(this).text();
+      var number = h4Text.match(/\d+/)[0];
+      var char = h4Text.match(/\D+/)[0];
+        var countValue = parseInt(number);  
+         
+        $(this).prop('Counter', 0).animate({
+            Counter: countValue
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now) + char);
+            }
+        });
+    });  
+});
 
 $(document).ready(function() {
     $('.search-btn').click(function() {
