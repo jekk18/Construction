@@ -1181,6 +1181,7 @@ h1, h2, h3, h4 ,h5, h6{
         -webkit-line-clamp: 2;
         overflow: hidden; 
         margin-top: 16px;
+        transition: 0.2s;
     }
     .o-service-item .text{
         color: #282828;
@@ -1190,9 +1191,10 @@ h1, h2, h3, h4 ,h5, h6{
         font-family: 'BPG Arial'; 
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 5;
+        -webkit-line-clamp: 4;
         overflow: hidden; 
         margin-top: 24px;
+        transition: 0.2s;
     } 
     .o-services-slider .slick-slide {
         margin: 0 40px;
@@ -1367,6 +1369,77 @@ h1, h2, h3, h4 ,h5, h6{
         z-index: 8!important;
     }
 /* News Detail Page */
+/* Services Page */
+.service-page-title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.service-page-title h1{
+    font-size: 72px;
+    font-family: 'BPG Arial';
+    font-weight: bold; 
+    color: #000;
+    line-height: 1.2;
+    text-transform: capitalize;
+    max-width: 800px;
+}
+.service-page-title .text-1{
+    font-size: 16px;
+    font-family: 'BPG Arial'; 
+    font-weight: 400;
+    color: #000;
+    line-height: 24px;
+    max-width: 800px;
+}
+.services-page-box-01{
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 60px 90px;
+}
+.service-list-item{
+    width: calc((100% / 4) - 68px);
+    height: 312px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    overflow: initial;
+    text-decoration: none;
+    border: 1px solid #28A31C;
+    transition: 0.2s;
+    position: relative;
+}
+.service-list-item::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 90%;
+    top: 5%;
+    right: -46px;
+    background: #A6A3A3;
+}
+.service-list-item:last-child:after,
+.service-list-item:nth-child(4n):after{
+    width: 0;
+}
+.service-list-item:hover{
+    background-color: #28A31C;
+}
+.service-list-item:hover h3,
+.service-list-item:hover .text{
+    color: #fff;
+}
+.service-list-item:hover .o-icon img{
+    filter: invert(100%) sepia(2%) saturate(7466%) hue-rotate(305deg) brightness(108%) contrast(106%);
+}
+/* Services Page */
+
 
 
 
