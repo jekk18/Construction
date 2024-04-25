@@ -38,7 +38,8 @@ $(document).ready(function(){
             breakpoint: 991,
             settings: {
               arrows: false, 
-              slidesToShow: 3
+              slidesToShow: 3,
+              slidesToScroll: 1
             }
           },
           {
@@ -60,6 +61,14 @@ $(document).ready(function(){
         arrows: true, 
         prevArrow: $('#prev-project'),
         nextArrow: $('#next-project'),
+        responsive: [
+          {
+            breakpoint: 1620,
+            settings: {   
+            variableWidth: false, 
+            }
+          }
+        ]
       });
       $('.about-slider').slick({
         dots: false,
@@ -96,7 +105,8 @@ $(document).ready(function(){
               breakpoint: 991,
               settings: {
                 arrows: false, 
-                slidesToShow: 3
+                slidesToShow: 3,
+                slidesToScroll: 1
               }
             },
             {
