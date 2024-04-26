@@ -1140,6 +1140,11 @@ h1, h2, h3, h4 ,h5, h6{
         width: 124px;
         height: 80px; 
         cursor: pointer;
+        position: relative;
+        z-index: 9;
+    }
+    .o-service-arrow .arroo span{
+        height: 30px;
     }
     .o-service-arrow .next{
         border-top-left-radius: 8px;
@@ -1206,6 +1211,9 @@ h1, h2, h3, h4 ,h5, h6{
     }
 /* About Page */
 /* News Page */
+.st-btn{
+    display: inline-block!important;
+}
 .news-page{
     display: -webkit-box;
 }
@@ -1439,6 +1447,11 @@ h1, h2, h3, h4 ,h5, h6{
 }
 .service-list-item:hover .o-icon img{
     filter: invert(100%) sepia(2%) saturate(7466%) hue-rotate(305deg) brightness(108%) contrast(106%);
+}
+ 
+.s-right-text .icon img{
+    max-width: 70px;
+    max-height: 65px;
 }
 /* Services Page */
 /* Submenu */
@@ -1800,7 +1813,7 @@ h1, h2, h3, h4 ,h5, h6{
         height: 100%;
     }
     .project-list-item-01{
-        width: 648px;
+        width: calc((100% / 2) - 117px);
         display: flex;
         flex-direction: column;
         gap: 27px;
@@ -1813,7 +1826,7 @@ h1, h2, h3, h4 ,h5, h6{
         width: 100%;
         height: 618px;
     }
-    .top-image image{
+    .top-image img{
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -1829,6 +1842,7 @@ h1, h2, h3, h4 ,h5, h6{
         display: flex;  
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 12px;
     }
     .status-o-c{
         display: flex;

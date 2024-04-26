@@ -73,6 +73,66 @@
     .banner-title{
         font-size: 170px;
     }
+    /* about page */
+    .o-service-arrow .arroo { 
+        width: 90px;
+        height: 60px; 
+    }
+    .o-services-slider .slick-slide {
+        margin: 0 30px;
+    } 
+    .o-services-slider .slick-list {
+        margin: 0 -43px;
+    }
+    .left-company-side { 
+        padding-right: 60px;
+    }
+    /* about page */
+    /* News Detail */
+    .news-detail{
+        padding-top: 20px;
+    }
+    /* News Detail */
+    /* Services Page */
+    .services-page-box-01 { 
+        gap: 50px 50px;
+    }
+    .service-list-item {
+        width: calc((100% / 4) - 38px);
+    }
+    .service-list-item::after{
+        right: -27px;
+    }
+    /* Services Page */ 
+    /* Submenu Page */
+    .submenu-item {
+        width: calc((100% / 4) - 38px);
+    }
+    .submenu-item::after{
+        right: -27px;
+    }
+    .submenu-box { 
+        gap: 50px 50px;
+    }
+    /* Submenu Page */
+    /* Contact Page */
+    .map-section {
+        width: 100%;
+        height: 782px;
+    }
+    /* Contact Page */  
+    /* Project Page */
+    .project-list-item-01 {
+        width: calc((100% / 2) - 80px);
+    }
+    .top-image { 
+        height: 530px;
+    }
+    .service-page-title .text-1{
+        margin-top: 20px;
+    }
+    /* Project Page */
+
 }
 
 @media (max-width: 1430px) {
@@ -140,7 +200,7 @@
     .home-banner-item{
         height: 770px;
     }
-    .section-title {
+    .section-title, .service-page-title h1 {
         font-size: 68px;
     }
     .about-left-text .text {
@@ -190,6 +250,97 @@
     .news-text-box .news-time {
         margin-top: 25px; 
     }
+    /* about page */
+    .about-slider-item a { 
+        width: 500px;
+        height: 450px;
+        margin-right: 24px;
+    }
+    .absolute-img-about { 
+        width: 450px;
+        height: 384px; 
+    }
+    /* about page */
+    /* News Detail */
+    .news-detail{
+        padding-top: 20px;
+    }
+    .fancy-imgs a { 
+        height: 220px;
+    }
+    .fancy-imgs a:first-child { 
+        height: 440px;
+    }
+    .n-detail-box { 
+        gap: 40px;
+    }
+    .n-right-text .title h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .n-right-text .time { 
+        margin-top: 20px;
+    }
+    /* News Detail */
+    /* Services Page */
+    .service-page-title{
+        margin-bottom: 60px;
+    }
+    .service-list-item {
+        width: calc((100% / 3) - 34px);
+    }
+    .service-list-item:last-child:after, .service-list-item:nth-child(3n):after {
+        width: 0;
+    }
+    .service-list-item:nth-child(4n):after{
+        width: 2px;
+    } 
+    /* Services Page */
+    /* Submenu Page */
+    .submenu-item {
+        width: calc((100% / 3) - 34px);
+    }
+    .submenu-item:last-child:after, .submenu-item:nth-child(3n):after {
+        width: 0;
+    }
+    .submenu-item:nth-child(4n):after{
+        width: 2px;
+    }
+/* Submenu Page */
+/* Project Page */
+.project-title-01 {
+    font-size: 20px;
+    padding: 0 30px;
+}
+.project-ul-01{
+    padding: 0 30px;
+    gap: 12px;
+}
+.project-text-01{
+    padding: 0 30px;
+}
+/* Project Page */    
+ /*Project Detail  */
+ .project-detail-title {
+    font-size: 26px; 
+    line-height: 38px;
+    width: 1000px;
+    margin-bottom: 70px; 
+}
+.relative-section{
+    padding-bottom: 60px;
+}
+.similar-projects-box .project-list-item-01:nth-child(2n - 1){
+    margin-top: -30px;
+}
+.similar-projects-box .project-list-item-01 {
+    width: calc((100% / 2) - 35px);
+}
+.similar-projects {
+    padding: 50px 0;
+}
+ /*Project Detail  */
+
 }
 
 @media (max-width: 1200px) { 
@@ -237,7 +388,7 @@
     .home-post-item .time {
         font-size: 20px;
     }
-    .section-title {
+    .section-titl, .service-page-title h1 {
         font-size: 60px;
         margin-bottom: 30px;
     }
@@ -303,6 +454,107 @@
         margin-bottom: 40px; 
         margin-left: 60px;
     }
+    /* About Page */
+    .company-box { 
+        flex-direction: column;
+        gap: 80px;
+    }
+    .left-company-side{
+        width: 100%;
+        padding-right: 0;
+    }
+    .right-company-side{
+        width: 100%;
+        justify-content: center;
+    }
+    /* About Page */
+    /* News Page */
+    .news-page-item{
+        margin-top: 50px!important;
+    }
+    .news-page-item{
+        width: calc((100% / 3) - 8px);
+        height: 670px;
+    }
+    /* News Page */
+ /* News Detail */ 
+    .n-detail-box { 
+        flex-direction: column-reverse;
+    }
+   .n-left-side{
+    width: 100%;
+   }
+   .n-right-text{
+    width: 100%;
+   }
+    /* News Detail */
+    /* Search */
+    .search-result-box{
+        margin-top: 80px;
+    }
+    /* Search */
+    /* Contact Page */
+    .contact-box{
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+    .left-contact-form{
+        margin: 0;
+        width: 100%;
+    }
+    .right-contact-info{
+        width: 100%;
+    }
+    /* Contact Page */
+    /* Project Page */  
+    .project-list-box::after{
+        display: none;
+    }
+    .project-list-item-01 {
+        width: calc((100% / 2) - 20px);
+    }
+    .project-list-box{
+        gap: 40px;
+    }
+     .status-project .time{
+        padding-left: 10px;
+    }
+    .top-image {
+        height: 440px;
+    }
+    .project-filter-box { 
+        margin-bottom: 120px;
+    }
+    .project-list-item-01:nth-child(2n - 1) {
+        margin-top: -40px;
+    }
+    /* Project Page */
+ /*Project Detail  */
+ .project-detail-title { 
+    width: 90%;
+    margin-bottom: 60px; 
+    padding-left: 0;
+}
+.project-detail-text-001{
+    padding-left: 0;
+}
+.relative-section{
+    padding-bottom: 50px;
+}
+.similar-projects-box .project-list-item-01:nth-child(2n - 1){
+    margin-top: 0;
+}
+.similar-projects-box .project-list-item-01 {
+    width: calc((100% / 2) - 35px);
+}
+.similar-projects {
+    padding: 40px 0;
+}
+.project-detail-absolute-ilustrator, .similar-projects::after{
+    display: none;
+}
+ /*Project Detail  */
+
 }
 @media (max-width: 991px){
     .container-big {
@@ -341,7 +593,7 @@
     .home-banner-item {
         height: 500px;
     }
-    .home-banner {
+    .home-banner,.section-banner-0 {
         height: 500px;
     }
     .home-post-item { 
@@ -364,12 +616,9 @@
     .about-left-text .text { 
         margin: 0 auto;
     }
-    .section-title {
+    .section-title, .service-page-title h1 {
         font-size: 50px;  
-    }
-    .section-title {
-        font-size: 50px;
-    }
+    } 
     .our-services-absolute-box {
         top: 40px;
     }
@@ -446,7 +695,126 @@
     .copyright-footer {
         margin-top: 60px;
     }
-    
+    /* About Page */
+    .company-box {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .counter-relative-box, .count-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .count-box .count{
+        position: initial!important;
+        width: 200px;
+        height: 200px;    
+    }
+    .absolute-circles{
+        display: none;
+    }
+    .count-box .count h4 {
+        font-size: 42px;
+    }
+    .o-service-arrow{
+        display: none;
+    }
+    .about-slider-box{
+        margin-top: 20px;
+    }
+    .breadcrumb-box{
+        margin-bottom: 20px;
+    }
+    /* About Page */
+    /* News Detail */
+    .news-detail{
+        padding-top: 0;
+    }
+    .n-right-text .time {
+        margin-top: 10px;
+    }
+    .n-right-text .title {
+        margin-top: 30px;
+        padding-bottom: 40px; 
+    }
+    .n-right-text .text { 
+        margin-top: 40px;
+    }
+    .n-right-text .title h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    /* News Detail */
+    /* Search */
+    .search-form form input{
+        width: 80%;
+    }
+    /* Search */
+    /* Services Page */
+    .service-page-title{
+        margin-bottom: 50px;
+    }
+    .service-list-item {
+        width: calc((100% / 2) - 20px);
+    }
+    .service-list-item:after {
+        width: 0!important;
+    }
+    .services-page-box-01{
+        gap: 40px;
+    }
+    /* Services Page */
+     /* Submenu Page */
+     .submenu-item {
+        width: calc((100% / 2) - 20px);
+    }
+    .submenu-item:after {
+        width: 0!important;
+    }
+    .submenu-box{
+        gap: 40px;
+    }
+    /* Submenu Page */
+    /* Contact Page */
+    .map-section { 
+        height: 550px;
+    }
+    /* Contact Page */
+    /* Project Page */
+    .service-page-title .text-1 {
+        margin-top: 0px;
+    }
+    .project-text-01{
+        -webkit-line-clamp: 6;
+    }
+    .top-image {
+        height: 400px;
+    }
+    /* Project Page */
+    /* Project Detail Page */
+    .similar-projects-title{
+        margin-bottom: 0;
+    }
+    .project-detail-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .relative-section, .similar-projects {
+        padding-bottom: 50px;
+    }
+    .status-o-c .category{
+        font-size: 14px;
+    }
+    .status-o { 
+        font-size: 14px; 
+    }
+    .similar-projects-box .project-list-item-01 {
+        width: calc((100% / 2) - 20px);
+    }
+    /* Project Detail Page */
+
 }
 
 @media (max-width: 768px){
@@ -487,6 +855,12 @@
         font-size: 40px;
         margin-bottom: 25px;
     }
+    .service-page-title{
+        margin-bottom: 30px;
+    }
+    .service-page-title h1{
+        font-size: 40px;
+    }
     .our-services-text-box {
         max-width: 460px;
     }
@@ -512,6 +886,142 @@
     .project-img a{ 
         height: 400px;
     }
+    /* About Page */
+    .o-services-slider .slick-slide {
+        margin: 0 10px;
+    } 
+    .o-services-slider .slick-list {
+        margin: 0 -10px;
+    }
+    .about-slider-item a {
+        width: 400px;
+        height: 360px;
+        margin-right: 24px;
+    }
+    .absolute-img-about {
+        width: 275px;
+        height: 270px;
+    }
+    .company-section{
+        padding-top: 20px;
+    }
+    .counter-relative-box, .count-box { 
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .count-box .count { 
+        width: 150px;
+        height: 150px;
+    }
+    .count-box .count h4 {
+        font-size: 32px;
+    }
+    .count-box .count .text {
+        font-size: 12px; 
+    }
+    .breadcrumb-box ul li a{
+        font-size: 18px;
+    }
+    .breadcrumb-box {
+        margin-bottom: 10px;
+    }
+    /* About Page */
+    /* News Page */
+    .news-page-item{
+        margin-top: 40px!important;
+    }
+    .news-page-item{
+        width: calc((100% / 2) - 7px);
+        height: 630px;
+    }
+    /* News Page */
+      /* Services Page */
+   
+    .service-list-item {
+        width: calc((100% / 2) - 12px);
+    }
+   
+    .services-page-box-01{
+        gap: 24px;
+    }
+    .o-service-item .text{
+        font-size: 14px;
+        line-height: 20px;
+        -webkit-line-clamp: 5;
+    }
+    /* Services Page */
+    /* Submenu Page */
+    .submenu-item {
+        width: calc((100% / 2) - 12px);
+    } 
+    .submenu-box{
+        gap: 24px;
+    }
+    .submenu-item a h2{
+        font-size: 24px;
+        padding: 24px;
+    }
+    /* Submenu Page */
+    /* Contact Page */
+    .contact-info-box-001 { 
+        gap: 18px;
+        margin-top: 40px;
+    }
+    /* Contact Page */
+    /* Project Page */
+    .project-filter-box { 
+        flex-wrap: wrap; 
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    .project-filter-box {
+        margin-bottom: 60px;
+    }
+    .project-filter-box select{
+        width: 240px;
+    }
+    .project-list-item-01:nth-child(2n - 1) {
+        margin-top: 0;
+    }
+    .project-list-item-01 {
+        width: 100%;
+    }
+    .top-image {
+        height: 370px;
+    }
+    .project-title-01 {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+    .status-o-c .category, .status-o, .status-project .time {
+        font-size: 14px; 
+    }
+    .project-ul-01 {
+        padding: 0 20px;
+        gap: 9px;
+    }
+    .project-text-01 {
+        padding: 0 20px;
+        -webkit-line-clamp: 8;
+    }
+    /* Project Page */
+    /* Project Detail Page */
+    .relative-section, .similar-projects-box{
+        padding-bottom: 40px;
+    }
+    .project-detail-title {
+        font-size: 22px; 
+        width: 100%;
+    }
+    .similar-projects-title{
+        margin-bottom: 0;
+    }
+    .similar-projects-box .project-list-item-01 {
+        width: 100%;
+    }
+    /* Project Detail Page */
+
+
 }
 
 @media (max-width: 575px){
@@ -536,7 +1046,7 @@
     .home-banner-item {
         height: 500px;
     }
-    .home-banner {
+    .home-banner, .section-banner-0 {
         height: 500px;
     }
     .banner-title {
@@ -570,6 +1080,9 @@
         font-size: 28px;
         margin-bottom: 22px;
     }
+    .service-page-title h1{
+        font-size: 28px;
+    } 
     .about-right-text .text {
         font-size: 14px; 
         line-height: 20px;
@@ -684,4 +1197,174 @@
         margin: 20px 0; 
         justify-content: space-between 
     }
+    /* About Page */
+    .about-slider-item a {
+        width: 310px;
+        height: 300px;
+        margin-right: 10px;
+    }
+    .absolute-img-about{
+        display: none;
+    }
+    /* About Page */
+    /* News Page */
+    .news-page-item{
+        margin-top: 30px!important;
+    }
+    .news-page-item{
+        width: 100%;
+        height: initial;
+    }
+    /* News Page */
+    /* News Detail */
+    .n-right-text .title h1 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .n-right-text .title {
+        margin-top: 25px;
+        padding-bottom: 30px;
+    }
+    .n-right-text .text {
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .fancy-imgs {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+        width: 120%;
+        padding-right: 20%;
+        overflow-x: auto;
+    }
+    .fancy-imgs a  {
+        width: 312px!important;
+        height: 272px!important;
+    }
+    .fancy-imgs a img{
+        width: 312px!important;
+    }
+    .s-right-text{
+        margin-top: 10px;
+    }
+    /* News Detail */
+    /* Search */
+    .search-result-box {
+        margin-top: 50px;
+    }
+    .search-item { 
+        padding: 16px;
+    }
+    .search-item h2 {
+        font-size: 16px;
+    }
+    .search-item .text {
+        font-size: 14px; 
+        line-height: 20px; 
+        -webkit-line-clamp: 5; 
+    }
+    .search-result-box{
+        margin-bottom: 10px;
+    }
+    /* Search */
+   /* Services Page */ 
+   .service-list-item {
+    width: 100%;
+    padding: 24px;
+    } 
+    .services-page-box-01{
+        gap: 24px;
+    }
+    .section-titl, .service-page-title h1{
+        margin-bottom: 10px;
+    }
+    .o-service-item .text {
+        font-size: 16px;
+        line-height: 22px; 
+    }
+/* Services Page */
+/* Submenu Page */
+.submenu-item {
+    width: 100%; 
+}
+.submenu-item:after {
+    width: 0!important;
+}
+.submenu-box{
+    gap: 24px;
+}
+.submenu-item a h2 {
+    font-size: 22px; 
+}
+/* Submenu Page */ 
+/* Contact Page */
+.contact-info-box-001 {
+    gap: 14px;
+    margin-top: 30px;
+}
+.contact-box { 
+    gap: 45px;
+}
+.input-box{
+    width: 100%;
+}
+.textarea textarea {
+    height: 200px;
+}
+.map-section {
+    height: 400px;
+}
+.right-contact-info h1::after { 
+    bottom: -25px; 
+}
+.soc-icons { 
+    gap: 30px;
+}
+/* Contact Page */
+/* Project Page */
+.top-image {
+    height: 312px;
+}
+.project-text-01 {
+    font-size: 14px;
+}
+.project-ul-01 li {
+    list-style-type: none;
+    font-size: 14px;
+}
+.project-title-01 {
+    font-size: 16px; 
+}
+.project-filter-box select {
+    width: 90%;
+    font-size: 14px;
+}
+.service-page-title .text-1 {
+    font-size: 14px;
+    line-height: 20px;
+}
+.project-filter-box {
+    margin-bottom: 40px;
+}
+/* Project Page */
+/* Project Detail  */
+.project-detail-title {
+    font-size: 20px;
+    line-height: 28px;
+}
+.similar-projects-title{
+    margin-bottom: 20px;
+}
+.relative-section{
+    padding-bottom: 40px;
+}
+.similar-projects{
+    padding-top: 40px; 
+}
+.similar-projects-box{
+    padding-bottom: 20px;
+}
+/* Project Detail  */ 
+
 }

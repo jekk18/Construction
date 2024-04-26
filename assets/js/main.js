@@ -95,17 +95,18 @@ $(document).ready(function(){
               }
             },
             {
-              breakpoint: 1200,
+              breakpoint: 1420,
               settings: {
                 arrows: false, 
-                slidesToShow: 2
+                slidesToShow: 3,
+                slidesToScroll: 1
               }
             },
             {
               breakpoint: 991,
               settings: {
                 arrows: false, 
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1
               }
             },
