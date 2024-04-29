@@ -587,9 +587,172 @@
     .search-lang{
         display: none;
     }
+    /* Burger Menu */
     .burger-lines{
         display: flex;
     }
+    .burger-menu{ 
+        flex-direction: column;  
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 90%;
+        height: 100%;
+        background-color: #2A4770;
+        z-index: 999;
+        padding: 20px 8%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .burger-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .burger-header::after{
+        position: absolute;
+        content: "";
+        width: 200%;
+        left: -50%;
+        bottom: -15px;
+        height: 1px;
+        background: rgba(217, 217, 217, 0.2); 
+    }
+    .br-menu{
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'BPG Arial';
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+    .burger-search{
+        width: 70%; 
+        display: flex;
+        margin-top: 50px;
+    }
+    .burger-search form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .burger-search form input{
+        width: 75%;
+        height: 28px;
+        appearance: none;
+        background: none;
+        border: none;
+        padding-left: 6px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'BPG Arial'; 
+        border-radius: 4px;
+        outline: none;
+        background: rgba(217, 217, 217, 0.5);
+    }
+    .burger-search form input::placeholder{
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'BPG Arial'; 
+    }
+    .burger-search form button{
+        width: fit-content;
+        padding: 0 5px;
+        height: 28px;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'BPG Arial';
+        background: rgba(217, 217, 217, 0.5);
+    }
+    .burger-lang{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+    }
+    .burger-lang a, span{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'BPG Arial';
+        text-decoration: none;
+    }
+    .burger-lang a.active{ 
+        font-weight: 700; 
+    }
+    .burger-list .nav-ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .burger-list .nav-ul li a{
+        padding: 10px 0;
+        width: fit-content;
+    } 
+    .burger-list .nav-ul li:hover a{
+        color: #fff;
+    }
+    .burger-list .nav-ul li .submenu a{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'BPG Arial';
+    }
+    .submenuArrow{
+        position: relative;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .arrow-burger-list{
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        top: 18px;
+        right: 5%; 
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        width: 12px;
+        height: 8px;
+        padding: 3px;
+    }
+    .activeToggle .arrow-burger-list{
+        transform: rotate(180deg);
+    }
+    .activeToggle .submenu{
+        display: flex;
+        position: initial;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0;
+        margin: 0;
+        margin-top: 7px;  
+        padding-left: 5px;
+    }
+    .activeToggle .submenu .submenu-ul{
+        width: fit-content;
+        background: none;
+        box-shadow: none;
+    }
+    .activeToggle .submenu .submenu-ul li{
+         padding: 0;
+         border: none;
+         height: initial;
+    }
+    .activeToggle .submenu .submenu-ul li a{
+        padding: 5px 0;
+    }
+    .activeToggle .submenu .submenu-ul:before{
+        display: none;
+    }
+    /* Burger Menu */
+
     .home-banner-item {
         height: 500px;
     }

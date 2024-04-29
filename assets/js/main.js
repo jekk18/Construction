@@ -158,4 +158,44 @@ $(document).ready(function() {
         }
     });
 });
+ 
+$(document).ready(function() { 
+    $('.open-icon').click(function() {   
+      $('.burger-menu').css( "display", "flex" ); 
+  });
+
+  $('.close-icon').click(function() {   
+    $('.burger-menu').css( "display", "none" );
+  });
+});
+
+$(document).ready(function() {
+  $(document).mouseup(function(event) {
+    var burgerMenu = $('.burger-menu'); 
+    if (!burgerMenu.is(event.target) && !burgerMenu.has(event.target).length) {
+      burgerMenu.hide();  
+    }
+  });
+});
+ 
+$(document).ready(function() { 
+  var clonedMenu = $(".nav-ul").clone(); 
+  clonedMenu.find('li').removeClass('active-menu');
+
+  $(".burger-list").append(clonedMenu);
+
+  clonedMenu.find('li').each(function() {
+    if ($(this).children('.submenu').length > 0) {
+      $(this).addClass('submenuArrow');
+      $(this).append(`<div class="arrow-burger-list"></div>`);
+    }
+  });
+});
+$(document).ready(function() {
+  $('.arrow-burger-list').click(function() { 
+    $(this).closest('.nav-li').toggleClass('activeToggle'); 
+    $('.nav-li').not($(this).closest('.nav-li')).removeClass('activeToggle');
+  });
+});
+ 
 
